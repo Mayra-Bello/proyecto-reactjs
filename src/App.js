@@ -1,8 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
+import CartWidget from "./Components/CartWidget";
+import NavBar from "./Components/NavBar";
 
 function App() {
-  return <h1>Hola Mundo!</h1>;
+  const estilos = {
+    backgroundColor: "#1d1d1d",
+    padding: "20px",
+  };
+  return (
+    <div>
+      <NavBar></NavBar>
+      <h1 style={estilos}>Mi primer react App</h1>
+      <CartWidget></CartWidget>
+    </div>
+  );
 }
 
 export default App;
